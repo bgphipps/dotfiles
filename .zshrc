@@ -1,8 +1,10 @@
 export DOTFILES="$HOME/.dotfiles"
 
 # Antibody
+ANTIBODY_HOME="$(antibody home)"
 DISABLE_AUTO_UPDATE=true
 # export ZSH="$HOME/Library/Caches/antibody/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh"
+export ZSH="$ANTIBODY_HOME"/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh
 # source $DOTFILES/zsh_plugins.sh
 source <(antibody init)
 antibody bundle < $DOTFILES/zsh_plugins.txt
