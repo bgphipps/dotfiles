@@ -6,10 +6,11 @@ export ZSH="$HOME/Library/Caches/antibody/https-COLON--SLASH--SLASH-github.com-S
 source $DOTFILES/zsh_plugins.sh
 
 # Theme
-export MNML_INSERT_CHAR="$"
-export MNML_PROMPT=(mnml_git mnml_keymap)
-export MNML_RPROMPT=('mnml_cwd 20')
+# export MNML_INSERT_CHAR="$"
+# export MNML_PROMPT=(mnml_git mnml_keymap)
+# export MNML_RPROMPT=('mnml_cwd 20')
 
 # Dotfiles
 source $DOTFILES/path.zsh
 source $DOTFILES/aliases.zsh
+source $DOTFILES/functions.zsh
