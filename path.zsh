@@ -8,9 +8,10 @@ export PATH="node_modules/.bin:vendor/bin:$PATH"
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Go Paths
-export PATH=$PATH:/usr/local/go/bin
-export GOPATH=/Users/bphipps/go
-export PATH=$PATH:$GOPATH/bin
+# Go development
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
 # Kube Paths
 export PATH=$PATH:~/.kube/plugins
