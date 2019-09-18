@@ -33,11 +33,18 @@ alias gst="git status"
 alias gb="git branch"
 alias gc="git checkout"
 alias gd="git diff"
+alias gci="git commit"
+alias gunstage="reset HEAD --"
 alias gl="git log --oneline --decorate --color"
 alias gnuke="git clean -df && git reset --hard"
 
 # Kubernetes
 alias kns="kubens"
+alias k="kubectl"
+alias kgpo="kubectl get po"
+alias ksvc="kubectl get svc"
+alias kctx="kubectl ctx"
+alias kexec="kubectl exec -it"
 
 # alias fixallthegestures="killall Dock"
 
