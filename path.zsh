@@ -11,7 +11,12 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # Go development
 export GOPATH="${HOME}/.go"
 export GOROOT="$(brew --prefix golang)/libexec"
+# Go module proxy ignore fanatics packages
+export GONOPROXY="*.fanatics.corp,*.frg.tech"
+export GONOSUMDB="*.fanatics.corp,*.frg.tech"
+export GOPRIVATE="*.fanatics.corp,*.frg.tech"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+export PATH="$PATH:${HOME}/git/forge/go-build-scripts/modules"
 
 # Kube Paths
 export PATH=$PATH:~/.kube/plugins
